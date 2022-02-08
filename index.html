@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="displayData()">
+    <div id="inputs">
+        <input id="link" onchange="updateInputValues()" placeholder="enter link url" />
+        <input id="img" onchange="updateInputValues()" placeholder="enter img url" />
+    </div>
+    <div id="buttons">
+        <button onclick="createNewBanner('banners-list',linkValue, imgValue), pushToBannersData(linkValue, imgValue)">submit</button>
+        <button onclick="save()">save</button>
+        <button onclick="clearLocalStorage()">clear</button>
+    </div>
+
+    <div id="banners-list"></div>
+</body>
+
+</html>
